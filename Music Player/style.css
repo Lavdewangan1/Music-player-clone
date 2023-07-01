@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Roboto:wght@300&display=swap');
+
+body{
+    background-color: rgb(212, 205, 205);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    font-family: 'Belanosima', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: #ffffff;
+}
+
+nav ul li{
+    padding: 10px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.brand img{
+    padding: 0px 7px;
+    width: 40px;
+}
+
+.container{
+    min-height: 58vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    width: 75%; 
+    margin: 23px auto;
+    border-radius: 13px;
+    padding: 30px;
+    background-image:url('recources/bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.bottom{
+    position: sticky;
+    height: 125px;
+    background: black;
+    color: white;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.icons{
+    margin-top: 15px;
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+}
+.songList h1{
+    color: white;
+    margin: 0px 30px;
+}
+
+.songItem img{
+    width: 45px;
+    margin: 0px 15px;
+    border-radius: 50%;
+}
+
+.timestamp{
+    margin: 0px 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 11vw;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.songInfo img{
+    padding-right: 1vw;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+

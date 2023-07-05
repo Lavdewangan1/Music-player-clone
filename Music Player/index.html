@@ -9,39 +9,20 @@
 <body>
     <nav>
         <ul>
-            <li class="brand"><img src="Spotify Clone/logo.png" alt="Spotify">Spotify</li>
+            <li class="brand"><img src="recources/logo.png" alt="Spotify">Spotify</li>
             <li>Home</li>
             <li>About</li>
         </ul>
     </nav>
     <div class="container">
         <div class="songList">
-            <h1>Best of Anime</h1>
-            <div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName"></span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id ="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+            <h1>Best Songs in the World</h1>
+            <div id="mainBlock">
+                <div id="searchDiv">
+                    <input type="text" id="searchBar" placeholder="Enter the Song Name">
+                    <button id="searchButton">Search</button>
                 </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName"></span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id ="2" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName"></span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id ="3" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName"></span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id ="4" class="far songItemPlay fa-play-circle"></i> </span></span>
-                </div>
-                <div class="songItem">
-                    <img alt="1">
-                    <span class="songName"></span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id ="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+                <div id="searchResults">
                 </div>
             </div>
         </div>
@@ -50,6 +31,7 @@
     <div class="bottom">
         <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100">
         <div class="icons">
+            <div id="player"></div>
             <!-- fontawesome icons -->
             <i class="fas fa-2x fa-step-backward" id="previous"></i>
             <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
